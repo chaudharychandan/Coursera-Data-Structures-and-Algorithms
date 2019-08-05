@@ -7,6 +7,30 @@ def max_sliding_window_naive(sequence, m):
 
     return maximums
 
+class Queue():
+    def __init__(self):
+        self.inbox = Stack()
+        self.outbox = Stack()
+
+    def Enqueue(self, item):
+        self.inbox.Push(item)
+
+    def Dequeue(self):
+        if self.outbox.is_empty():
+            while self.inbox.is_empty() is False:
+                item = self.inbox.Pop()
+                self.outbox.Push(item)
+        self.outbox.Pop()
+
+    def Max(self):
+        inmax = self.inbox.Max(); outmax = self.outbox.Max()
+        if inmax is not None and outmax is not None:
+            return max(inmax, outmax)
+        elif inmax is not None:
+            return inmax
+        elif outmax is not None:
+            return outmax
+
 
 class Stack():
     def __init__(self):
