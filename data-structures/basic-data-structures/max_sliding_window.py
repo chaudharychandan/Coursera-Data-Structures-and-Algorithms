@@ -4,6 +4,15 @@
 def max_sliding_window_naive(sequence, m):
     queue = Queue()
     maximums = []
+    for i in range(m):
+        queue.Enqueue(sequence[i])
+
+    maximums.append(queue.Max())
+
+    for i in range(m, len(sequence)):
+        queue.Dequeue()
+        queue.Enqueue(sequence[i])
+        maximums.append(queue.Max())
 
     return maximums
 
