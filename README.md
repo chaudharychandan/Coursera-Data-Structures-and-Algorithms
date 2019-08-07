@@ -33,3 +33,12 @@
   - [Compute the Edit Distance Between Two Strings](/algorithmic-toolbox/dynamic-programming/edit_distance.py)
   - [Maximize the Value of an Arithmetic Expression](/algorithmic-toolbox/dynamic-programming/placing_parentheses.py)
   - [Longest Common Subsequence of Three Sequences](/algorithmic-toolbox/dynamic-programming/lcs3.py)
+
+## [Data Structures](/data-structures)
+
+### Basic Data Structures
+  - [Check brackets in the code](/data-structures/basic-data-structures/check_brackets.py)
+  - [Compute tree height](/data-structures/basic-data-structures/tree-height.py)
+  - [Network packet processing simulation](/data-structures/basic-data-structures/process_packages.py)
+  - [Extending stack interface](/data-structures/basic-data-structures/stack_with_max_naive.py)
+  - [Maximum in Sliding Window](/data-structures/basic-data-structures/max_sliding_window.py)
